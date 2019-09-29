@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,18 +15,31 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QrD-Ns-NR1">
-                                <rect key="frame" x="30" y="47" width="80" height="36"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="Settings">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ajo-CX-TgA">
+                                <rect key="frame" x="301" y="71" width="58" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="8Z2-pc-JVY"/>
+                                    <constraint firstAttribute="width" constant="58" id="XBM-ZE-4Jj"/>
+                                </constraints>
+                                <state key="normal" image="UNADJUSTEDNONRAW_thumb_d7">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QrD-Ns-NR1">
+                                <rect key="frame" x="16" y="79" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="VJO-17-b69"/>
+                                    <constraint firstAttribute="width" constant="50" id="tQD-hU-k74"/>
+                                </constraints>
+                                <state key="normal" image="settings-512">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BIH-xR-MGJ">
-                                <rect key="frame" x="216" y="628" width="178" height="196"/>
+                                <rect key="frame" x="181" y="582" width="178" height="196"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6h-oZ-DO9">
                                         <rect key="frame" x="74" y="0.0" width="104" height="60"/>
@@ -51,25 +64,15 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ajo-CX-TgA">
-                                <rect key="frame" x="336" y="44" width="58" height="58"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="58" id="QVy-UQ-Lki"/>
-                                    <constraint firstAttribute="height" constant="58" id="eIu-Yf-gzl"/>
-                                </constraints>
-                                <state key="normal" title="Profile" image="UNADJUSTEDNONRAW_thumb_d7">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.6588235294117647" blue="0.6588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BIH-xR-MGJ" secondAttribute="bottom" constant="38" id="2bc-tk-pX7"/>
-                            <constraint firstItem="QrD-Ns-NR1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="A6Y-5y-bna"/>
-                            <constraint firstItem="QrD-Ns-NR1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="3" id="HdD-cH-AKd"/>
-                            <constraint firstItem="Ajo-CX-TgA" firstAttribute="trailing" secondItem="BIH-xR-MGJ" secondAttribute="trailing" id="rGH-yz-JOZ"/>
-                            <constraint firstItem="Ajo-CX-TgA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tV7-uC-axr"/>
-                            <constraint firstItem="Ajo-CX-TgA" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="wLu-cw-yPh"/>
+                            <constraint firstItem="QrD-Ns-NR1" firstAttribute="bottom" secondItem="Ajo-CX-TgA" secondAttribute="bottom" id="Eb5-M4-N7z"/>
+                            <constraint firstItem="Ajo-CX-TgA" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="jnK-Ba-2qj"/>
+                            <constraint firstItem="Ajo-CX-TgA" firstAttribute="trailing" secondItem="BIH-xR-MGJ" secondAttribute="trailing" id="qGT-ws-fXu"/>
+                            <constraint firstItem="Ajo-CX-TgA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="s3c-FM-Ycp"/>
+                            <constraint firstItem="BIH-xR-MGJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="wty-c7-lcU"/>
+                            <constraint firstItem="QrD-Ns-NR1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="yBl-cZ-xpX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -89,10 +92,11 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+            <point key="canvasLocation" x="136.80000000000001" y="138.17733990147784"/>
         </scene>
     </scenes>
     <resources>
         <image name="UNADJUSTEDNONRAW_thumb_d7" width="1024" height="1024"/>
+        <image name="settings-512" width="512" height="512"/>
     </resources>
 </document>
