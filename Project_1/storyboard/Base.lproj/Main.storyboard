@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QrD-Ns-NR1">
+                                <rect key="frame" x="30" y="47" width="80" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Settings">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BIH-xR-MGJ">
+                                <rect key="frame" x="216" y="628" width="178" height="196"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6h-oZ-DO9">
+                                        <rect key="frame" x="74" y="0.0" width="104" height="60"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                        <state key="normal" title="Week">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsH-YY-aFe">
+                                        <rect key="frame" x="43" y="68" width="135" height="60"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                        <state key="normal" title="Budget">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pa5-xo-11D">
+                                        <rect key="frame" x="0.0" y="136" width="178" height="60"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                        <state key="normal" title="Accounts">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ajo-CX-TgA">
+                                <rect key="frame" x="336" y="44" width="58" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="58" id="QVy-UQ-Lki"/>
+                                    <constraint firstAttribute="height" constant="58" id="eIu-Yf-gzl"/>
+                                </constraints>
+                                <state key="normal" title="Profile" image="UNADJUSTEDNONRAW_thumb_d7">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.6588235294117647" blue="0.6588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BIH-xR-MGJ" secondAttribute="bottom" constant="38" id="2bc-tk-pX7"/>
+                            <constraint firstItem="QrD-Ns-NR1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="A6Y-5y-bna"/>
+                            <constraint firstItem="QrD-Ns-NR1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="3" id="HdD-cH-AKd"/>
+                            <constraint firstItem="Ajo-CX-TgA" firstAttribute="trailing" secondItem="BIH-xR-MGJ" secondAttribute="trailing" id="rGH-yz-JOZ"/>
+                            <constraint firstItem="Ajo-CX-TgA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tV7-uC-axr"/>
+                            <constraint firstItem="Ajo-CX-TgA" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="wLu-cw-yPh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="8bC-Xf-vdC" id="tdq-w2-qSY"/>
+                        <outlet property="profileImage" destination="Ajo-CX-TgA" id="pNp-0U-3da"/>
+                        <outlet property="searchDisplayController" destination="jCT-tT-bAR" id="2yi-kh-PG2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="jCT-tT-bAR">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="XwZ-rQ-dMn"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="kRO-dI-MIW"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="WAR-pr-M9V"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="bzE-n3-7U0"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="UNADJUSTEDNONRAW_thumb_d7" width="1024" height="1024"/>
+    </resources>
+</document>
