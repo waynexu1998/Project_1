@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet var swipe: UISwipeGestureRecognizer!
     @IBOutlet var backgroundView: UIView!
     @IBOutlet weak var profileImage: UIButton!
     override func viewDidLoad() {
